@@ -67,7 +67,7 @@ export default class DynamoDbConnector extends EventEmitter
 				data
 			}
 		};
-		console.log('Set', params);
+		// console.log('Set', params);
 		this.db.put(params, err => {
 			cb(err ? err.message : null);
 		});
@@ -90,7 +90,7 @@ export default class DynamoDbConnector extends EventEmitter
 				id
 			}
 		};
-		console.log('Get', params);
+		// console.log('Get', params);
 		this.db.get(params, (err, res) => {
 			if (err) {
 				return cb(err.message);
