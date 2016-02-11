@@ -16,9 +16,7 @@ npm i -S deepstreamio-storage-aws-dynamodb
 
 ## Usage
 
-First you must set up your AWS credentials via  
-[one of these methods](https://docs.aws.amazon.com/AWSJavaScriptSDK/guide/node-configuring.html). 
-Then:
+First you must set up your AWS credentials via [one of these methods][aws-auth-docs]. Then:
 
 ```js
 import DynamoConnector from 'deepstreamio-storage-aws-dynamodb';
@@ -28,6 +26,8 @@ server.set('storage', new DynamoConnector({
 	table: 'deepstream'
 }));
 ```
+
+[aws-auth-docs]: https://docs.aws.amazon.com/AWSJavaScriptSDK/guide/node-configuring.html
 
 [npm-url]: https://npmjs.org/package/deepstreamio-storage-aws-dynamodb
 [npm-image]: https://img.shields.io/npm/v/deepstreamio-storage-aws-dynamodb.svg?style=flat-square
