@@ -1,4 +1,4 @@
-# deepstreamio-storage-aws-dynamodb
+# AWS DynamoDB connector for deepstream.io
 
 [![NPM version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
