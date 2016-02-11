@@ -1,6 +1,6 @@
 {
   "name": "deepstreamio-storage-aws-dynamodb",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "AWS DynamoDB connector for deepstream.io",
   "main": "dist/index.js",
   "files": [
