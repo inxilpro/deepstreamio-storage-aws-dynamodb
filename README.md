@@ -16,10 +16,17 @@ npm i -S deepstreamio-storage-aws-dynamodb
 
 ## Usage
 
-```js
-import deepstreamioStorageAwsDynamodb from "deepstreamio-storage-aws-dynamodb"
+First you must set up your AWS credentials via  
+[one of these methods](https://docs.aws.amazon.com/AWSJavaScriptSDK/guide/node-configuring.html). 
+Then:
 
-deepstreamioStorageAwsDynamodb() // true
+```js
+import DynamoConnector from 'deepstreamio-storage-aws-dynamodb';
+
+server.set('storage', new DynamoConnector({
+	region: 'us-east-1',
+	table: 'deepstream'
+}));
 ```
 
 [npm-url]: https://npmjs.org/package/deepstreamio-storage-aws-dynamodb
